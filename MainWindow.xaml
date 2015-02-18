@@ -1,0 +1,60 @@
+﻿<Window x:Class="KitchenAid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="400" Width="600" 
+        WindowStartupLocation="CenterScreen"
+        FontSize="14" Closing="Window_Closing">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Name="MenuPannel" Grid.Row="0" Grid.ColumnSpan="2">
+            <Menu FontSize="16" Background="#FF74D7DA" Height="30">
+                <MenuItem Header="_File" Height="30" Width="40">
+                    <MenuItem Header="_New" Name="mnuNewRecipe" ToolTip="Add New Recipe"/>
+                    <Separator/>
+                    <MenuItem Header="_Import" Name="mnuImport" ToolTip="Import Recipes BackUp file"/>
+                    <MenuItem Header="_Export" Name="mnuExport" ToolTip="Export to BackUp file"/>
+                    <Separator/>
+                    <MenuItem Header="_Print" Name="mnuPrint" ToolTip="Print out Invoice"/>
+                    <Separator/>
+                    <MenuItem Header="_Exit" Name="mnuExit" ToolTip="Close Application" />
+                </MenuItem>
+                <MenuItem Header="_Help">
+                    <MenuItem Header="_About" Name="mnuAbout" Click="mnuAbout_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Button Name="btnAddNewRecipe" Content="Add New Recipe" Height="30" Margin="3,13,3,3" Click="btnAddNewRecipe_Click"/>
+            <Button Name="btnDeleteRecipe" Content="Delete Selected Recipe" Height="30" Margin="3" Click="btnDeleteRecipe_Click"/>
+            <Button Name="btnEditRecipe" Content="Edit Selected Recipe" Height="30" Margin="3" Click="btnEditRecipe_Click"/>
+            <Button Name="btnShowRecipe" Content="Show Selected Recipe" Height="30" Margin="3" Click="btnShowRecipe_Click"/>
+            <Button Name="btnShoppingList" Content="Shopping List" Height="30" Margin="3" Click="btnShoppingList_Click"/>
+            <Button Name="btnExit" Content="Exit" Height="30" FontSize="16" Foreground="Blue" Margin="3" Click="btnExit_Click"/>
+        </StackPanel>
+        <WrapPanel Grid.Column="0" Grid.Row="1">
+            <GroupBox Header="Recipe List" Width="390" Height="330">
+                <ListView Name="lstRecipeList">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Category}" Width="100"/>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="275"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            </GroupBox>
+        </WrapPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KitchenAid.Recipe" Collapsed="true">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kgEAJYAAAgACgADEAIAAAAQAIgAQgBQAAAIAAAgACAA=</HashCode>
+      <FileName>Classes\Recipe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.767" />
+  </Class>
+  <Class Name="KitchenAid.Chicken" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Chicken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Cake" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Cake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Cookies" Collapsed="true">
+    <Position X="18.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Cookies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Dessert" Collapsed="true">
+    <Position X="11.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Dessert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Drink" Collapsed="true">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Drink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Fish" Collapsed="true">
+    <Position X="9.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Fish.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.IceCream" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\IceCream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Id" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEEEAAAACAAAAAAAAAACAAAAABAAA=</HashCode>
+      <FileName>Classes\Id.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Ingredient" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAgAAAEIAAAAAAEAAAAAAAAAAIAgABAQAA=</HashCode>
+      <FileName>Classes\Ingredient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Classes.IngredientManager" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\IngredientManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Kitcken" Collapsed="true">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Kitcken.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Meat" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Meat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.NonVegetarien" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\NonVegetarien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Pies" Collapsed="true">
+    <Position X="21" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Pies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Classes.RecipeManager" Collapsed="true">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\RecipeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Salad" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Salad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.SeaFood" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\SeaFood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Classes.ShopingMenuItemManager" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\ShopingMenuItemManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.ShoppingMenuItem" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAACEAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Classes\ShoppingMenuItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Soup" Collapsed="true">
+    <Position X="16" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Soup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Store" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Store.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.Vegetarian" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Vegetarian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitchenAid.ListManager&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGIAAEAAAAAAABAQCAAABAQgBAAAAAAACAAAAABQIAI=</HashCode>
+      <FileName>Utility\ListManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="KitchenAid.IListManager&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEAAAAAAABAQCAAABAQgAAAAAAAACAAAAABQIAA=</HashCode>
+      <FileName>Interface\IListManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="KitchenAid.IRecipe" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABQAAAAAAgABAAAAAAAQAAgAAgBAAAAAAAAAACAA=</HashCode>
+      <FileName>Interface\IRecipe.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

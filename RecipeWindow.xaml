@@ -1,0 +1,118 @@
+﻿<Window x:Class="KitchenAid.RecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="RecipeWindow" Height="650" Width="700" 
+        WindowStartupLocation="CenterScreen"
+        FontSize="14">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <DockPanel Name="MenuPannel" Grid.Row="0">
+            <Menu FontSize="16" Background="#FF74D7DA" Height="30">
+                <MenuItem Header="_File" Height="30" Width="40">
+                    <MenuItem Header="_New" Name="mnuNewRecipe" ToolTip="Add New Recipe" Click="mnuNewRecipe_Click"/>
+                    <Separator/>
+                    <MenuItem Header="_Import" Name="mnuImport" ToolTip="Import Recipes BackUp file" Click="mnuImport_Click"/>
+                    <MenuItem Header="_Export" Name="mnuExport" ToolTip="Export to BackUp file" Click="mnuExport_Click"/>
+                    <Separator/>
+                    <MenuItem Header="_Print" Name="mnuPrint" ToolTip="Print out Invoice" Click="mnuPrint_Click"/>
+                    <Separator/>
+                    <MenuItem Header="_Exit" Name="mnuExit" ToolTip="Close Application" Click="mnuExit_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <GroupBox Header="Recipe Info" Name="grbRecipe">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Height="30" VerticalAlignment="Top">
+                        <Label Content="Name"/>
+                        <TextBox Name="txtName" Width="398" TextChanged="txtName_TextChanged"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="2,0">
+                        <Label Content="Type"/>
+                        <Label Content="Category" Margin="68,0,0,0"/>
+                        <Label Content="Origin" Margin="46,0,0,0"/>
+                        <Label Content="Order" Margin="64,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0">
+                        <ComboBox Name="cmbType" Text="Type" Width="108" Margin="1,0,2,0"
+                                  />
+                        <ComboBox Name="cmbCategory" Text="Category" Width="{Binding ElementName=cmbType,Path=Width}"
+                                  Margin="2,0"/>
+                        <ComboBox Name="cmbOrigen" Text="Origin" Width="{Binding ElementName=cmbType,Path=Width}"
+                                  Margin="{Binding ElementName=cmbCategory,Path=Margin}"
+                                  />
+                        <ComboBox Name="cmbServOrder" Text="Order" Width="{Binding ElementName=cmbType,Path=Width}"
+                                  Margin="{Binding ElementName=cmbCategory,Path=Margin}"
+                                  />
+                    </StackPanel>
+                    <StackPanel Margin="3,0,3,0">
+                        <Label Content="Description"/>
+                        <TextBox Name="txtDescrition" Height="110"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Name="grdImage" Grid.Column="1" Grid.Row="0" Header="Recipe Image" 
+                      Width="220" Height="250" VerticalAlignment="Top">
+                <StackPanel>
+                    <Image Source="Resources/happyFace.jpeg" Height="190"/>
+                    <Button Content="Load Image" Height="30" Margin="0,3"
+                            Name="btnLoadImage" Click="btnLoadImage_Click"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Top">
+            <GroupBox Header="Ingredients" Width="320" Height="300">
+                <StackPanel Orientation="Vertical">
+                    <ListView Name="lstIngredients" Height="240" VerticalAlignment="Top">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Item" Width="100" DisplayMemberBinding="{Binding Path=Item}"/>
+                                <GridViewColumn Header="Qty" Width="40" DisplayMemberBinding="{Binding Path=Quantity}"/>
+                                <GridViewColumn Header="Unit" DisplayMemberBinding="{Binding Path=Unit}"/>
+                                <GridViewColumn Header="Description" Width="150" DisplayMemberBinding="{Binding Path=Description}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Add" Height="30" Width="100" 
+                                HorizontalAlignment="Left" Margin="1,3,3,0"
+                                Name="btnAddIngredient" Click="btnAddIngredient_Click"/>
+                        <Button Content="Edit" Height="30" Width="100" 
+                                HorizontalAlignment="Right" Margin="0,3,3,0"
+                                Name="btnEditIngredient" Click="btnEditIngredient_Click"/>
+                        <Button Content="Delete" Height="30" Width="100"
+                                HorizontalAlignment="Right" Margin="0,3,0,0"
+                                Name="btnDeleteIngredient" Click="btnDeleteIngredient_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="How to Do" Width="360">
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="Portion"/>
+                            <TextBox Name="txtPortion" Height="30" HorizontalAlignment="Left" Width="160" Margin="5,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="Time"/>
+                            <TextBox Name="txtTime" Height="30" HorizontalAlignment="Right" Width="170"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <TextBox Name="txtHowToDo" Height="200" VerticalAlignment="Bottom"/>
+                </Grid>
+            </GroupBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="3">
+            <Button Name="btnAddNewRecipe" Content="Add New Recipe" Width="335" 
+                    Margin="4,0" Height="30" Click="btnAddNewRecipe_Click"/>
+            <Button Name="btnCancel" Content="Cancel" Width="{Binding ElementName=btnAddNewRecipe, Path=Width}"
+                    Height="{Binding ElementName=btnAddNewRecipe,Path=Height}"
+                    Click="btnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
